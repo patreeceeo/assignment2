@@ -19,7 +19,7 @@ By Roger French
 #include <stdlib.h>
 
 // Globle Declorations
-int numOrder();
+void numOrder();
 int number;
 
 int main()
@@ -30,13 +30,14 @@ int main()
     printf("\nEnter an integer in the range of 0 to 32,767: ");
     scanf("\n%d", &number);
 
-    printf("\n%d", numOrder());
+    numOrder();
+    /* printf("\n%d", numOrder()); */
 
-    return (0);
+    return 0;
 
 }// main
 
-int numOrder()
+void numOrder()
 {
  // Local Declorations
     int five;
@@ -58,7 +59,5 @@ int numOrder()
     printf("\n%d   %d", two, one);
     printf("\n%d", one);
     printf("\n");
-
-    return (0);
 
 }// numOrder
